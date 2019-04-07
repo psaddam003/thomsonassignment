@@ -1,0 +1,123 @@
+footer {
+    padding-top: 3.5rem;
+    padding-bottom: 3.75rem;
+    background-color: #fafafa;
+
+    .custom-container{
+        flex-direction: column;
+    }
+
+    a{
+        font-size: 16px;
+        color: #597d80;
+        // text-transform: uppercase;
+        text-decoration: underline;
+    }
+
+    .footer-content-container{
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+
+        .name-locations-details-container{
+
+            .address-wrapper{
+                span{
+                    display: inline-block;
+                    position: relative;
+                    font-size: 16px;
+                    line-height: 1;
+                    margin: .5rem;
+                    padding: .375rem 0;
+                    color: #333333;
+                    font-weight: 400;
+                    text-transform: uppercase;
+
+                    &:before{
+                        position: absolute;
+                        top: 50%;
+                        right: -12px;
+                        content: '';
+                        height: 5px;
+                        width: 5px;
+                        background-color: black;
+                        border-radius: 50%;
+                    }
+
+                    &.company-name{
+                        font-weight: 900;
+                    }
+
+                    &:last-child{
+                        &:before{
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            .location-link-wrapper{
+                text-align: center;
+                a{
+                    font-size: 16px;
+                    color: #597d80;
+                    text-transform: uppercase;
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .social-review-links-container{
+            margin-top: 2.75rem;
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .social-link-list{
+                display: flex;
+                align-items: center;
+                .social-icon{
+                    margin: 0 .75rem;
+                    width: 45px;
+                    height: 45px;
+                    border-radius: 50%;
+                    background-color: #eee;
+                    padding: .75rem 1rem;
+                    cursor: pointer;
+
+                    i{
+                        color: white;
+                    }
+
+                }
+            }
+
+            .review-btn{
+                margin-left: 1rem;
+                padding: .75rem 1rem;
+                border-radius: 1.5rem;
+                background-color: #eee;
+                color: white;
+                text-transform: uppercase;
+                font-weight: 900;
+                font-size: 16px;
+                cursor: pointer;
+            }
+        }
+
+        .copyright-text{
+            margin: 1.5rem 0;
+        }
+
+        .scrollTop-btn{
+            margin: 3.75rem 0 1.75rem 0;
+            border-radius: 50%;
+            background-color: #eee;
+            padding: .75rem;
+        }
+    }
+}
